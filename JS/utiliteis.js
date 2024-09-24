@@ -13,3 +13,11 @@ function getTextFieldValueById(id){
      const innerValue=parseFloat(innerText);
      return innerValue;
 }
+//Button Part
+// function ShowSectionById(id){
+//     document.getElementById('btn-donation').classList.add('hidden');
+    
+//     document.getElementById('btn-history').classList.add('hidden');
+    
+//     document.getElementById(id).classList.remove('hidden');
+// }

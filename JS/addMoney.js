@@ -9,7 +9,7 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
     if(inputMoney>donatBalance){
         alert('Un Available Balance');
         if(isNaN===inputMoney){
-            alert('Please! Input a Valid Number');
+            alert('');
             
         }
         const additionBalance=[mainAccount+donatBalance]-donatBalance;

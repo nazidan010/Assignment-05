@@ -12,28 +12,35 @@
     <!-- Nav Bar start -->
      <nav>
         <div class="navbar bg-[#FDD135]">
-            <div class="w-full">
-            <div class="navbar-start text-xl font-bold">
-                    <button id="btn-blog" class="bg-[#B4F461] p-3 rounded-2xl">Blog</button>
+            <div class="w-full sm:flex flex-col-reverse ">
+                <!-- Blog Button Start -->
+            <div class="grid sm:grid-cols-2">
+                <div class="snavbar-start text-xl font-bold"></div>
+                    <button id="btn-blog" class="bg-[#B4F461] p-4 rounded-2xl">Blog</button>
               </div>
+              <!-- Blog Button End -->
+              <!-- Logo and Name Start -->
               <div class="navbar-center">
                       <div class="sm:grid grid-cols-2">
                           <img class="w-3/12 ml-10" src="./images/logo.png" alt="">
-                          <h1 class="font-extrabold mr-2">Donate Bangladesh</h1>
+                          <h1 class="font-extrabold text-xl mr-2">Donate Bangladesh</h1>
                       </div>
                   </div>
+            </div>
+                  <!-- Logo and Name End -->
                   <!-- Main Balance Start -->
-                  <div class="navbar-end w-64">
+                  <div class="navbar-end w-fit">
                       <div class="bg-white rounded-lg">
-                          <div class="stat grid sm:grid-cols-2 lg:grid-cols-3">
+                          <div class="stat grid sm:grid-cols-2
+                          lg:grid-cols-4">
                             <img class="w-6/12" src="./images/coin.png" alt="">
                             <div id="main-account" class="font-bold">10000</div>
                             <p class="font-bold">BDT</p>
               </div>
                       </div>
                     </div>
+                    <!-- Main Balance End -->
               </div>
-              <!-- Main Balance End -->
           </div>
      </nav>
      <!-- Nav Bar End -->
@@ -41,8 +48,8 @@
         <!-- Button Section Start -->
         <section class="mt-5 flex justify-center">
             <div>
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#B4F461]">Donation</button>
-            <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">History</button>
+                <button id="btn-donation" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#B4F461]">Donation</button>
+            <button id="btn-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">History</button>
             </div>
         </section>
         <!-- Button Section End -->
@@ -73,7 +80,7 @@
                         <input id="input-money" type="text" class="grow" placeholder="Write Donation Amount" autocomplete="off" />
                       </label>
                      <!-- Donate Now Button -->
-                    <button id="btn-donate" class="btn btn-wide bg-orange-400 hover:bg-[#B4F461]">Donate Now</button>
+                    <button id="btn-donate" class="btn btn-wide bg-orange-400 w-10/12 hover:bg-[#B4F461]">Donate Now</button>
                   </div>
                 </div>
               </div>
