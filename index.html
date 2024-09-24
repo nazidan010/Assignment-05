@@ -10,11 +10,11 @@
 </head>
 <body>
     <!-- Nav Bar start -->
-     <nav class="border-2 border-red-500" >
+     <nav>
         <div class="navbar bg-[#FDD135]">
             <div class="w-full">
             <div class="navbar-start text-xl font-bold">
-                    <button class="bg-[#B4F461] p-3 rounded-2xl">Blog</button>
+                    <button id="btn-blog" class="bg-[#B4F461] p-3 rounded-2xl">Blog</button>
               </div>
               <div class="navbar-center">
                       <div class="sm:grid grid-cols-2">
@@ -27,7 +27,7 @@
                       <div class="bg-white rounded-lg">
                           <div class="stat grid sm:grid-cols-2 lg:grid-cols-3">
                             <img class="w-6/12" src="./images/coin.png" alt="">
-                            <div class="font-bold">10000</div>
+                            <div id="main-account" class="font-bold">10000</div>
                             <p class="font-bold">BDT</p>
               </div>
                       </div>
@@ -39,7 +39,7 @@
      <!-- Nav Bar End -->
     <main>
         <!-- Button Section Start -->
-        <section class="mt-5 flex justify-center border-2 border-yellow-500">
+        <section class="mt-5 flex justify-center">
             <div>
                 <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#B4F461]">Donation</button>
             <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">History</button>
@@ -49,7 +49,7 @@
          <!-- Card Section Start -->
           <!-- Card Section NoaKhali start -->
          <section>
-            <div class="hero mt-5 border-2 border-green-500"> 
+            <div class="hero mt-5"> 
                 <div class="hero-content flex-col lg:flex-row">
                   <img
                     src="./images/noakhali.png"
@@ -59,7 +59,7 @@
                     <div class="bg-white rounded-lg w-40">
                         <div class="stat flex">
                           <img src="./images/coin.png" alt="">
-                          <div class="font-bold">500</div>
+                          <div id="donate-balance" class="font-bold">500</div>
                           <p class="font-bold">BDT</p>
                         </div>
                       </div>
@@ -70,10 +70,10 @@
                     </p>
                     <!-- Input Field -->
                     <label class="input input-bordered flex items-center">
-                        <input type="text" class="grow" placeholder="Write Donation Amount" />
+                        <input id="input-money" type="text" class="grow" placeholder="Write Donation Amount" autocomplete="off" />
                       </label>
                      <!-- Donate Now Button -->
-                    <button class="btn btn-wide bg-orange-400 hover:bg-[#B4F461]">Donate Now</button>
+                    <button id="btn-donate" class="btn btn-wide bg-orange-400 hover:bg-[#B4F461]">Donate Now</button>
                   </div>
                 </div>
               </div>
@@ -82,5 +82,8 @@
 
           <!-- Card Section End -->
     </main>
+    <script src="./JS/addMoney.js"></script>
+    <script src="./JS/utiliteis.js"></script>
+    <script src="./JS/blog.js"></script>
 </body>
 </html>
