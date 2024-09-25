@@ -3,7 +3,7 @@ function getInputFieldValueById(id){
     // Input Field
     const inputValue=document.getElementById(id).value;
     const inputNumber=parseFloat(inputValue);
-   
+    // const inputNumber=isNaN(inputValue);
     return inputNumber;
 }
 //Inner Text Field

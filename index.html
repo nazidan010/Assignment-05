@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Nav Bar start -->
-     <nav>
+     <nav class="top-0 sticky z-20">
         <div class="navbar bg-[#FDD135]">
             <div class="w-full sm:flex flex-col-reverse ">
                 <!-- Blog Button Start -->
@@ -42,17 +42,18 @@
                     <!-- Main Balance End -->
               </div>
           </div>
+           <!-- Button Section Start -->
+        <section class="mt-5 flex justify-center">
+          <div>
+              <button id="btn-donation" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#B4F461]">Donation</button>
+          <button id="btn-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">History</button>
+          </div>
+      </section>
+      <!-- Button Section End -->
      </nav>
      <!-- Nav Bar End -->
     <main>
-        <!-- Button Section Start -->
-        <section class="mt-5 flex justify-center">
-            <div>
-                <button id="btn-donation" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg hover:bg-[#B4F461]">Donation</button>
-            <button id="btn-history" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">History</button>
-            </div>
-        </section>
-        <!-- Button Section End -->
+       
          <!-- Card Section Start -->
           <!-- Card Section NoaKhali start -->
          <section>
@@ -90,33 +91,33 @@
            <!-- Card Section Feni Start -->
            <section>
             <div class="hero mt-5"> 
-                <div class="hero-content flex-col lg:flex-row">
-                  <img
-                    src="./images/feni.png"
-                    class="  rounded-lg shadow-2xl" />
-                  <div>
-                    <!-- Balance Part Start-->
-                    <div class="bg-white rounded-lg w-40">
-                        <div class="stat flex">
-                          <img src="./images/coin.png" alt="">
-                          <div id="donate-balance" class="font-bold">500</div>
-                          <p class="font-bold">BDT</p>
-                        </div>
+              <div class="hero-content flex-col lg:flex-row">
+                <img
+                  src="./images/feni.png"
+                  class="  rounded-lg shadow-2xl" />
+                <div>
+                  <!-- Balance Part Start-->
+                  <div class="bg-white rounded-lg w-40">
+                      <div class="stat flex">
+                        <img src="./images/coin.png" alt="">
+                        <div id="donate-balance-feni" class="font-bold">500</div>
+                        <p class="font-bold">BDT</p>
                       </div>
-                     <!-- Balance part End -->
-                    <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
-                    <p class="py-6">
-                        The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
-                    </p>
-                    <!-- Input Field -->
-                    <label class="input input-bordered flex items-center">
-                        <input id="input-money" type="text" class="grow" placeholder="Write Donation Amount" autocomplete="off" />
-                      </label>
-                     <!-- Donate Now Button -->
-                    <button id="btn-donate" class="btn btn-wide bg-orange-400 w-10/12 hover:bg-[#B4F461]">Donate Now</button>
-                  </div>
+                    </div>
+                   <!-- Balance part End -->
+                  <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                  <p class="py-6">
+                    The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                  </p>
+                  <!-- Input Field -->
+                  <label class="input input-bordered flex items-center">
+                      <input id="input-money-feni" type="text" class="grow" placeholder="Write Donation Amount" autocomplete="off" />
+                    </label>
+                   <!-- Donate Now Button -->
+                  <button id="btn-donate-feni" class="btn btn-wide bg-orange-400 w-10/12 hover:bg-[#B4F461]">Donate Now</button>
                 </div>
               </div>
+            </div>
          </section>
            <!-- Card Section Feni End -->
 
@@ -132,7 +133,7 @@
                         <div class="bg-white rounded-lg w-40">
                             <div class="stat flex">
                               <img src="./images/coin.png" alt="">
-                              <div id="donate-balance" class="font-bold">500</div>
+                              <div id="donate-balance-quota" class="font-bold">500</div>
                               <p class="font-bold">BDT</p>
                             </div>
                           </div>
@@ -143,10 +144,10 @@
                         </p>
                         <!-- Input Field -->
                         <label class="input input-bordered flex items-center">
-                            <input id="input-money" type="text" class="grow" placeholder="Write Donation Amount" autocomplete="off" />
+                            <input id="input-money-quota" type="text" class="grow" placeholder="Write Donation Amount" autocomplete="off" />
                           </label>
                          <!-- Donate Now Button -->
-                        <button id="btn-donate" class="btn btn-wide bg-orange-400 w-10/12 hover:bg-[#B4F461]">Donate Now</button>
+                        <button id="btn-donate-quota" class="btn btn-wide bg-orange-400 w-10/12 hover:bg-[#B4F461]">Donate Now</button>
                       </div>
                     </div>
                   </div>
@@ -154,6 +155,24 @@
             <!-- Card Section Quota End  -->
 
           <!-- Card Section End -->
+           <!-- Modal Section Start -->
+            <section>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h2 class="text-lg font-bold">congratulation!</h2>
+    <img src="./images/coin.png" alt="">
+    <p class="py-4">You have Donation for humankind</p>
+    <h2>Successful</h2>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Button Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+            </section>
+           <!-- Modal Section End -->
     </main>
     <Footer class="bg-[#FDD835] p-20 mt-10">
 
