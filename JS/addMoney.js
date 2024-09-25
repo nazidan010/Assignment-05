@@ -78,3 +78,8 @@ document.getElementById('btn-donate-quota').addEventListener('click', function(e
         
     }
 });
+
+// Transaction History
+const transactionHistory=document.getElementById('p');
+transactionHistory.innerText=`Donate: ${inputMoney} Tk. Balance: ${subtractionBalance}`
+document.getElementById('btn-history').appendChild(transactionHistory);

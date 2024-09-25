@@ -3,6 +3,7 @@ document.getElementById('btn-donation').addEventListener('click', function(){
     document.getElementById('noaKhali-page').classList.remove('hidden');
     document.getElementById('feni-page').classList.remove('hidden');
     document.getElementById('quota-page').classList.remove('hidden');
+    document.getElementById('footer-section').classList.remove('hidden');
 });
 //History Button
 document.getElementById('btn-history').addEventListener('click', function(){
