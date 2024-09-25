@@ -78,14 +78,3 @@ document.getElementById('btn-donate-quota').addEventListener('click', function(e
         
     }
 });
-
-
-
-// History Button >>>
-// document.getElementById('btn-history').addEventListener('click', function(event){
-//     event.preventDefault();
-//     //Balance Display>>>>
-//     const balanceDisplay=document.createElement('p');
-//     balanceDisplay.innerText=`Cash In: ${btn-history} Tk. Balance ${additionBalance}`
-//     document.getElementById('donate-balance').appendChild(balanceDisplay);
-// });
