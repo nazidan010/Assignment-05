@@ -15,8 +15,9 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
         const additionBalance=donateBalance+parseFloat(inputMoney);
         document.getElementById('donate-balance').innerText=additionBalance;
         my_modal_1.showModal()
-        // console.log(additionBalance);
-        // return additionBalance;
+        //Display Subtraction with Main balance Noakhali Section
+        const subtractionBalance=mainAccount-inputMoney;
+        document.getElementById('main-account').innerText=subtractionBalance;
         
     }
     else{
@@ -40,8 +41,10 @@ document.getElementById('btn-donate-feni').addEventListener('click', function(ev
         const additionBalanceFeni=donateBalanceFeni+parseFloat(inputMoneyFeni);
         document.getElementById('donate-balance-feni').innerText=additionBalanceFeni;
         my_modal_1.showModal()
-        // console.log(additionBalance);
-        // return additionBalance;
+        
+        //Display Subtraction with Main balance Feni Section
+        const subtractionBalanceFeni=mainAccount-inputMoneyFeni;
+        document.getElementById('main-account').innerText=subtractionBalanceFeni;
         
     }
     else{
@@ -66,8 +69,9 @@ document.getElementById('btn-donate-quota').addEventListener('click', function(e
         const additionBalanceQuota=donateBalanceQuota+parseFloat(inputMoneyQuota);
         document.getElementById('donate-balance-quota').innerText=additionBalanceQuota;
         my_modal_1.showModal()
-        // console.log(additionBalance);
-        // return additionBalance;
+        //Display Subtraction with Balance Quota Movement Section
+        const subtractionBalanceQuota=mainAccount-inputMoneyQuota;
+        document.getElementById('main-account').innerText=subtractionBalanceQuota;
         
     }
     else{
